@@ -1,10 +1,11 @@
 version: 0.2
-# variables:
-#   ECR_REPO_NAME: my-angular-app
-parameter-store:
-  # DOCKERHUB_TOKEN: /dockerhub/token
-  # DOCKERHUB_USER: /dockerhub/user
-  ECR_REPO_URL: /codepipeline/ecr_repository_url
+env:
+  # variables:
+  #   ECR_REPO_NAME: my-angular-app
+  parameter-store:
+    # DOCKERHUB_TOKEN: /dockerhub/token
+    # DOCKERHUB_USER: /dockerhub/user
+    ECR_REPO_URL: /codepipeline/ecr_repository_url
 phases:
   pre_build:
     commands:
